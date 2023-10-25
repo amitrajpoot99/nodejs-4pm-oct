@@ -1,0 +1,50 @@
+Product - API(CRUD)
+Backend -Node JS, Express, Mongo DB 
+
+Modules/Packages: express,cors,morgan,dotenv,mongoose
+
+
+npm init -y
+
+npm i express cors morgan dotenv mongoose
+
+DataBase Design 
+================
+Product Collection Schema
+
+Collection/ Table - Product  
+Field Name: Type
+
+ name  : string,
+ image : string,
+ price : number , 
+ qty   : number ,
+ info  : string,
+ created:Date 
+
+REST API - CRUD 
+1)Create a New Product/ Upload a New Product 
+2)Read All Product
+3)Read Product 
+4)Update Product
+5)Delelte Product 
+
+1)Create a New Product 
+URL:127.0.0.1:8080/api/newproduct
+URL:127.0.0.1:8080/api/addproduct
+Method:POST
+Required Filed:name,image,price,qty,info
+
+2)Read All Product
+URL:127.0.0.1:8080/api/all
+URL:127.0.0.1:8080/api/allProducts
+Method:GET
+Required Filed:None
+
+
+Test API:
+http://localhost:8080/
+http://localhost:8080/api/allproduct
+http://localhost:8080/api/delete/2
+http://localhost:8080/api/edit/3
+http://localhost:8080/api/all
