@@ -52,6 +52,7 @@ router.get("/all", async (req,resp)=>{
 
 /*
 ULL:127.0.0.1:8080/api/products/6538ff07986455414dbfb6f9
+Method:PUT
 */
 router.put("/products/:id", async(req,resp)=>{
     let prodId=req.params.id
