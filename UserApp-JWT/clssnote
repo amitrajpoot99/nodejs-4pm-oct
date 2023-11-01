@@ -1,0 +1,29 @@
+User Module - API,s
+
+User Registration 
+
+API URL: localhost:8080/user/add
+Method : POST
+Required Field:name,email,password
+Access Type:Public 
+
+Note: Bcrypt JS 
+
+User Login 
+API URL: localhost:8080/user/login
+Method : POST
+Required Field:email,password
+Access Type:Public 
+
+Note: JWT
+
+
+Get User 
+API URL: localhost:8080/user/
+Method : GET
+Required Field:Token - reading token from browser local storage
+Access Type:Public 
+
+
+Install Required Dependencies:
+npm i express morgan mongoose dotenv

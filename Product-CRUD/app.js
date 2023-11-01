@@ -26,7 +26,8 @@ app.get("/",(req,resp)=>{
 
 app.use("/api",productRouter)
 
-mongoose.connect(url).then((response)=>{
+mongoose.connect(url)
+.then((response)=>{
     console.log("Mongo DB Connection Successfull")
 }).catch((err)=>{
     console.log(err)
